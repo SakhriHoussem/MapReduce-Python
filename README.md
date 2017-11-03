@@ -24,23 +24,29 @@
 
 ### la commende d execution du program MapReduce en Pyhton :
 
-`hadoop jar <chemain de fichier streaming.jar>  
-    -Dmaperd.reduce,tasks=1   
-    -file  <chemain du ficher map on Local> 
-    -mapper "python <chemain du ficher map  on Local>" 
-    -file <chemain du ficher reduce on Local> 
-    -reducer "python <chemain du ficher reduce on Local>" 
-    -input <chemain du ficher input on HDFS> 
-    -output <chemain du ficher output on HDFS>`
+```bash
+hadoop jar <chemain de fichier streaming.jar> 
+-Dmaperd.reduce,tasks=1
+-file  <chemain du ficher map on Local>
+-mapper "python <chemain du ficher map  on Local>"
+-file <chemain du ficher reduce on Local>
+-reducer "python <chemain du ficher reduce on Local>"
+-input <chemain du ficher input on HDFS>
+-output <chemain du ficher output on HDFS>
+```
 	
 ### exemple de commande : 
 	
 	
-`hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming-2.6.0-mr1-cdh5.12.0.jar 
-    -Dmaperd.reduce,tasks=1   -file /home/cloudera/workspace/wordcount/mapper.py
-     -mapper "python /home/cloudera/workspace/wordcount/mapper.py"
-     -file /home/cloudera/workspace/wordcount/reducer.py 
-     -reducer "python /home/cloudera/workspace/wordcount/reducer.py"
-     -input myinput/  -output out`
+```bash
+hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming-2.6.0-mr1-cdh5.12.0.jar
+-Dmaperd.reduce,tasks=1
+-file /home/cloudera/workspace/wordcount/mapper.py
+-mapper "python /home/cloudera/workspace/wordcount/mapper.py"
+-file /home/cloudera/workspace/wordcount/reducer.py
+-reducer "python /home/cloudera/workspace/wordcount/reducer.py"
+-input myinput/
+-output out
+```
 
 
