@@ -22,8 +22,9 @@
 		arbre fiable fable vendre
 		devenir faible barbe 
 ### pour Test ou compiler un program MapReduce Python on local
-	avant de passer en MapReduce pour detect les erreurs de Synataxe
-	
+
+avant de passer en MapReduce pour détecter les erreurs Syntaxique
+
 ```bash
 	cat <chemain de fichier input on local> | python <chemain de fichier mapper.py on local> | python <chemain de fichier reducer.py on local>
 ```
@@ -31,7 +32,7 @@
 ```bash
 	hdfs dfs -CopyFromLocal <chemain du ficher input on Local> <nom de dossier de destination>
 ```
-	ou
+ou : 
 ```bash
 	hadoop fs -CopyFromLocal <chemain du fichier input on Local> <nom de dossier de destination>
 ```
