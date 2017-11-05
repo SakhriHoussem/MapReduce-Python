@@ -1,28 +1,28 @@
 # MapreducePythonPrograms
-## Hadoop Mapreduce Programs Exemples with Python
+## Hadoop MapReduce Programs Examples with Python
 
 ### Exemples : 
 
-	* Exemple 1 Total des ventes par magazin 
-	* Exemple 4 Calcule maximum et minimum du salaire  
-  	* Exemple 5 calcule moyenne de l ecart type du Salaire
+	* Exemple 1 Total des ventes par magasin
+	* Exemple 4 Calculer maximum et minimum du salaire
+  	* Exemple 5 calculer moyenne de l'écart type du Salaire
 	* Exemple 6 anagram 
 
-### Exemple1 : en a utiliser un fichier input sous la forme suivant:
+### Exemple1 : en à utiliser un fichier input sous la forme suivant:
 
-		 date | temps | magazin| produit | cout | paiement
+		 date | temps | magasin| produit | cout | paiement
 
-### Exemple 4 & 5: en a utiliser un fichier input sous la forme suivant:   
+### Exemple 4 & 5: en à utiliser un fichier input sous la forme suivant:   
 
 		 id , age , sexe , adresse , salaire
 
-### Exemple 6 : en a utiliser un fichier input sous la forme suivant:
+### Exemple 6 : en à utiliser un fichier input sous la forme suivant:
 
 		melon barre deviner lemon
 		arbre fiable fable vendre
 		devenir faible barbe 
 
-### la commende d execution du program MapReduce en Pyhton :
+### la commande d'exécution du program MapReduce en Python :
 
 ```bash
 hadoop jar <chemain de fichier streaming.jar> 
