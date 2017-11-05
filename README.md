@@ -24,11 +24,11 @@
 
 ### Copier le fichier input on HDFS
 ```bash
-	hdfs dfs -CopyFromLocal <chemain du ficher map on Local> <nom de dossier>
+	hdfs dfs -CopyFromLocal <chemain du ficher input on Local> <nom de dossier de destination>
 ```
 ou
 ```bash
-	hadoop fs -CopyFromLocal <chemain du ficher map on Local> <nom de dossier>
+	hadoop fs -CopyFromLocal <chemain du fichier input on Local> <nom de dossier de destination>
 ```
 ### la commande d'exécution du program MapReduce en Python :
 
@@ -43,16 +43,19 @@ hadoop jar <chemain de fichier streaming.jar>
 -output <chemain du ficher output on HDFS>
 ```
 	
-### exemple de commande : 
+### exemple des commandes : 
 	
-	
+```bash
+hadoop fs -copyFromLocal /home/cloudera/workspace/Exemple1/input.txt  input/ 
+```
+
 ```bash
 hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming-2.6.0-mr1-cdh5.12.0.jar
 -Dmaperd.reduce,tasks=1
--file /home/cloudera/workspace/wordcount/mapper.py
--mapper "python /home/cloudera/workspace/wordcount/mapper.py"
--file /home/cloudera/workspace/wordcount/reducer.py
--reducer "python /home/cloudera/workspace/wordcount/reducer.py"
+-file /home/cloudera/workspace/Exemple1/mapper.py
+-mapper "python /home/cloudera/Exemple1/wordcount/mapper.py"
+-file /home/cloudera/workspace/Exemple1/reducer.py
+-reducer "python /home/cloudera/Exemple1/wordcount/reducer.py"
 -input myinput/
 -output out
 ```
