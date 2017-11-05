@@ -5,7 +5,7 @@
 
 	* Exemple 1 Total des ventes par magasin
 	* Exemple 4 Calculer maximum et minimum du salaire
-  	* Exemple 5 calculer moyenne de l'écart type du Salaire
+	* Exemple 5 calculer moyenne de l'écart type du Salaire
 	* Exemple 6 anagram 
 
 ### Exemple1 : en à utiliser un fichier input sous la forme suivant:
