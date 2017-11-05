@@ -26,27 +26,27 @@
 avant de passer en MapReduce pour détecter les erreurs Syntaxique
 
 ```bash
-	cat <chemain de fichier input on local> | python <chemain de fichier mapper.py on local> | python <chemain de fichier reducer.py on local>
+	cat <chemin de fichier input on local> | python <chemin de fichier mapper.py on local> | python <chemin de fichier reducer.py on local>
 ```
 ### Copier le fichier input on HDFS
 ```bash
-	hdfs dfs -CopyFromLocal <chemain du ficher input on Local> <nom de dossier de destination>
+	hdfs dfs -CopyFromLocal <chemin du ficher input on Local> <nom de dossier de destination>
 ```
 ou : 
 ```bash
-	hadoop fs -CopyFromLocal <chemain du fichier input on Local> <nom de dossier de destination>
+	hadoop fs -CopyFromLocal <chemin du fichier input on Local> <nom de dossier de destination>
 ```
 ### la commande d'exécution du program MapReduce en Python :
 
 ```bash
-hadoop jar <chemain de fichier streaming.jar> 
+hadoop jar <chemin de fichier streaming.jar> 
 -Dmaperd.reduce,tasks=1
--file  <chemain du ficher map on Local>
--mapper "python <chemain du ficher map  on Local>"
--file <chemain du ficher reduce on Local>
--reducer "python <chemain du ficher reduce on Local>"
--input <chemain du ficher input on HDFS>
--output <chemain du ficher output on HDFS>
+-file  <chemin du ficher map on Local>
+-mapper "python <chemin du ficher map  on Local>"
+-file <chemin du ficher reduce on Local>
+-reducer "python <chemin du ficher reduce on Local>"
+-input <chemin du ficher input on HDFS>
+-output <chemin du ficher output on HDFS>
 ```
 	
 ### exemple des commandes : 
