@@ -24,11 +24,11 @@
 
 ### Copier le fichier input on HDFS
 ```bash
-hdfs dfs -CopyFromLocal <chemain du ficher map on Local> <nom de dossier>
+	hdfs dfs -CopyFromLocal <chemain du ficher map on Local> <nom de dossier>
 ```
 ou
 ```bash
-hadoop fs -CopyFromLocal <chemain du ficher map on Local> <nom de dossier>
+	hadoop fs -CopyFromLocal <chemain du ficher map on Local> <nom de dossier>
 ```
 ### la commande d'exécution du program MapReduce en Python :
 
