@@ -20,7 +20,8 @@
 
 		melon barre deviner lemon
 		arbre fiable fable vendre
-		devenir faible barbe 
+		devenir faible barbe
+
 ### pour Test ou compiler un program MapReduce Python on local
 avant de passer en MapReduce pour détecter les erreurs Syntaxique
 
