@@ -55,6 +55,12 @@ hadoop jar <chemin de fichier streaming.jar>
 hadoop fs -cat <chemin de fichier output>/part-00000 
 ```
 
+### la commande de suppression du répertoire Output :
+
+```bash
+hadoop fs -rm -r <répertoire de fichier output>
+```
+
 ### exemple des commandes : 
 	
 ```bash
@@ -75,7 +81,12 @@ hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming-2.6
 ```
 
 ```bash
+# afficher le contenu de fichier output
 hadoop fs -cat out/part-00000 
 ```
 
+```bash
+# suppression du répertoire Output
+hadoop fs -rm -r out
+```
 
