@@ -60,12 +60,13 @@ hadoop fs -cat <chemin de fichier output>/part-00000
 hadoop fs -rm -r <répertoire de fichier output>
 ```
 
-### Execution de l'exemple 1 : 
+### Execution d'un exemple :
+en va choisi l'exemple 1 pour tester
 
-copier l'exemple 1 dans le chemain suivant: /home/cloudera
+copier l'exemple 1 dans le chemin suivant: /home/cloudera
 
 ```bash
-# crée répertoire input dans HDFS
+# créer répertoire input dans HDFS
 hadoop fs -mkdir /user/input
 ```
 
