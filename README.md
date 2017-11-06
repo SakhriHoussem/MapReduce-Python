@@ -22,8 +22,8 @@
 		arbre fiable fable vendre
 		devenir faible barbe
 
-### pour Test ou compiler un program MapReduce Python on local
-avant de passer en MapReduce pour détecter les erreurs Syntaxique
+### Executer le program MapReduce Python on local
+pour test avant de passer en MapReduce pour détecter les erreurs Syntaxique
 ```bash
 	cat <chemin de fichier input on local> | python <chemin de fichier mapper.py on local> | python <chemin de fichier reducer.py on local>
 ```
