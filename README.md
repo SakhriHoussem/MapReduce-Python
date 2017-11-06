@@ -48,22 +48,34 @@ hadoop jar <chemin de fichier streaming.jar>
 -input <chemin du ficher input on HDFS>
 -output <chemin du ficher output on HDFS>
 ```
-	
+
+### la commande d'afficher contenu de fichier Output :
+
+```bash
+hadoop fs -cat <chemin de fichier output>/part-00000 
+```
+
 ### exemple des commandes : 
 	
 ```bash
+# du local vers HDFS
 hadoop fs -copyFromLocal /home/cloudera/workspace/Exemple1/input.txt  input/ 
 ```
 
 ```bash
+# execution Program Mapreduce
 hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming-2.6.0-mr1-cdh5.12.0.jar
 -Dmaperd.reduce,tasks=1
 -file /home/cloudera/workspace/Exemple1/mapper.py
--mapper "python /home/cloudera/Exemple1/wordcount/mapper.py"
+-mapper "python /home/cloudera/workspace/Exemple1/mapper.py"
 -file /home/cloudera/workspace/Exemple1/reducer.py
--reducer "python /home/cloudera/Exemple1/wordcount/reducer.py"
+-reducer "python /home/cloudera/workspace/Exemple1/reducer.py"
 -input myinput/
 -output out
+```
+
+```bash
+hadoop fs -cat out/part-00000 
 ```
 
 
