@@ -35,7 +35,7 @@ ou :
 ```bash
 	hadoop fs -CopyFromLocal <chemin du fichier input on Local> <nom de dossier de destination>
 ```
-### la commande d'exécution du program MapReduce en Python :
+### Commande d'exécution du program MapReduce en Python :
 
 ```bash
 hadoop jar <chemin de fichier streaming.jar> 
@@ -48,19 +48,19 @@ hadoop jar <chemin de fichier streaming.jar>
 -output <chemin du ficher output on HDFS>
 ```
 
-### la commande d'afficher contenu de fichier Output :
+### Commande d'afficher contenu de fichier Output :
 
 ```bash
 hadoop fs -cat <chemin de fichier output>/part-00000 
 ```
 
-### la commande de suppression du répertoire Output :
+### Commande de suppression du répertoire Output :
 
 ```bash
 hadoop fs -rm -r <répertoire de fichier output>
 ```
 
-### exemple des commandes : 
+### Exemple des commandes : 
 	
 ```bash
 # du local vers HDFS
