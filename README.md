@@ -70,7 +70,7 @@ hadoop fs -mkdir /user/input
 ```
 
 ```bash
-# du local vers HDFS
+# transférer le fichier input.text du local vers HDFS
 hadoop fs -copyFromLocal /home/cloudera/Exemple1/input.txt  input/ 
 ```
 
