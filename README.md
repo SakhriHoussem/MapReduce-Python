@@ -8,7 +8,7 @@
 	* Exemple 5 calculer moyenne de l'écart type du Salaire
 	* Exemple 6 anagram 
 
-### Exemple1 : en à utiliser un fichier input sous la forme suivant:
+### Exemple 1 : en à utiliser un fichier input sous la forme suivant:
 
 		 date | temps | magasin| produit | cout | paiement
 
@@ -60,22 +60,29 @@ hadoop fs -cat <chemin de fichier output>/part-00000
 hadoop fs -rm -r <répertoire de fichier output>
 ```
 
-### Exemple des commandes : 
-	
+### Execution de l'exemple 1 : 
+
+copier l'exemple 1 dans le chemain suivant: /home/cloudera
+
+```bash
+# crée répertoire input dans HDFS
+hadoop fs -mkdir /user/input
+```
+
 ```bash
 # du local vers HDFS
-hadoop fs -copyFromLocal /home/cloudera/workspace/Exemple1/input.txt  input/ 
+hadoop fs -copyFromLocal /home/cloudera/Exemple1/input.txt  input/ 
 ```
 
 ```bash
 # execution Program Mapreduce
 hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming-2.6.0-mr1-cdh5.12.0.jar
 -Dmaperd.reduce,tasks=1
--file /home/cloudera/workspace/Exemple1/mapper.py
--mapper "python /home/cloudera/workspace/Exemple1/mapper.py"
--file /home/cloudera/workspace/Exemple1/reducer.py
--reducer "python /home/cloudera/workspace/Exemple1/reducer.py"
--input myinput/
+-file /home/cloudera/Exemple1/mapper.py
+-mapper "python /home/cloudera/Exemple1/mapper.py"
+-file /home/cloudera/Exemple1/reducer.py
+-reducer "python /home/cloudera/Exemple1/reducer.py"
+-input Exemple1/input.txt #exemple
 -output out
 ```
 
