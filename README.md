@@ -1,12 +1,12 @@
-# MapreducePythonPrograms
-## Hadoop MapReduce Programs Examples with Python
+# MapReduce Python
+## MapReduce Python Example
 
 ### Exemples : 
 
-	* Exemple 1 Total des ventes par magasin
-	* Exemple 4 Calculer maximum et minimum du salaire
-	* Exemple 5 calculer moyenne de l'écart type du Salaire
-	* Exemple 6 anagram 
+	* Exemple 1: Total des ventes par magasin
+	* Exemple 4: Calculer maximum et minimum du salaire
+	* Exemple 5: Calculer moyenne de l'écart type du Salaire
+	* Exemple 6: Anagram 
 
 ### Exemple 1 : en à utiliser un fichier input sous la forme suivant:
 
